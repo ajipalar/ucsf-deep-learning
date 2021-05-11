@@ -1,0 +1,52 @@
+BioGRID TAB 3.0 Formatted Downloads
+The BioGRID TAB 3.0 format is a custom BioGRID format that is designed to provide the entirety of our curation effort in a format that is simple to read in Microsoft Excel or to script into Bioinformatics applications. All Columns are separated by tabulations.
+
+Back to BioGRID Download Formats
+
+How to Detect a BioGRID TAB 3.0 file
+BioGRID Tab 3.0 files are denoted by the extension .tab3.txt or .tab3.zip
+
+Header Definitions
+The first line of a BioGRID Tab 3.0 file is the heading line and starts with a hash (#). This line is purely for informational purposes and gives a brief description of the content contained in each column. If you are scripting the use of this file, you can simply ignore it.
+
+Interaction File Column Definitions
+The column contents of BioGRID Interaction Tab 3.0 files should be as follows:
+
+1. BioGRID Interaction ID. A unique identifier for each interaction within the BioGRID database. Can be used to link to BioGRID interaction pages. For example: http://thebiogrid.org/interaction/616539
+2. Entrez Gene Interactor A. The identifier from the Entrez-Gene database that corresponds to Interactor A. If no Entrez Gene ID is available, this will be a “-”.
+3. Entrez Gene Interactor B. Same structure as column 2.
+4. BioGRID ID Interactor A. The identifier in the BioGRID database that corresponds to Interactor A. These identifiers are best used for creating links to the BioGRID from your own websites or applications. To link to a page within our site, simply append the URL: http://thebiogrid.org/ID/ to each ID. For example, http://thebiogrid.org/31623/.
+5. BioGRID ID Interactor B. Same structure as column 4.
+6. Systematic name Interactor A. A plain text systematic name if known for interactor A. Will be a “-” if no name is available.
+7. Systematic name Interactor B. Same structure as column 6.
+8. Official symbol Interactor A. A common gene name/official symbol for interactor A. Will be a “-” if no name is available.
+9. Official symbol Interactor B. Same structure as column 8.
+10. Synonyms Interactor A. A “|” separated list of alternate identifiers for interactor A. Will be “-” if no aliases are available.
+11. Synonyms Interactor B. Same stucture as column 10.
+12. Experimental System Name. One of the many Experimental Evidence Codes supported by the BioGRID.
+13. Experimental System Type. This will be either “physical” or “genetic” as a classification of the Experimental System Name.
+14. Author. First author surname of the publication in which the interaction has been shown, optionally followed by additional indicators, e.g. Stephenson A (2005)
+15. Publication Source the publication source in which the interaction has been shown. Format is “SOURCE:ID” so for example: PUBMED:12345678
+16. Organism ID Interactor A. This is the NCBI Taxonomy ID for Interactor A.
+17. Organism ID Interactor B. Same structure as 16.
+18. Interaction Throughput. This will be either High Throughput, Low Throughput or Both (separated by “|”).
+19. Quantitative Score. This will be a positive for negative value recorded by the original publication depicting P-Values, Confidence Score, SGA Score, etc. Will be “-” if no score is reported.
+20. Post Translational Modification. For any Biochemical Activity experiments, this field will be filled with the associated post translational modification. Will be “-” if no modification is reported.
+21. Qualifications. If additional plain text information was recorded for an interaction, it will be listed with unique qualifiers separated by “|”. If no qualification is available, this field will contain “-”.
+22. Tags. If an interaction has been tagged with additional classifications, they will be provided in this column separated by “|”. If no tag information is available, this field will contain “-”.
+23. Source Database. This field will contain the name of the database in which this interaction was provided.
+24. SWISS-PROT Accessions Interactor A - This field will contain one or more matching swiss-prot accessions, separated by “|”. If none are available, this field will contain “-”.
+25. TREMBL Accessions Interactor A - This field will contain one or more matching trembl accessions, separated by “|”. If none are available, this field will contain “-”.
+26. REFSEQ Accessions Interactor A - This field will contain one or more matching refseq accessions, separated by “|”. If none are available, this field will contain “-”.
+27. SWISS-PROT Accessions Interactor B - This field will contain one or more matching swiss-prot accessions, separated by “|”. If none are available, this field will contain “-”.
+28. TREMBL Accessions Interactor B - This field will contain one or more matching trembl accessions, separated by “|”. If none are available, this field will contain “-”.
+29. REFSEQ Accessions Interactor B - This field will contain one or more matching refseq accessions, separated by “|”. If none are available, this field will contain “-”.
+30. Ontology Term IDs - If any ontology terms are recorded for this interaction, the official ontology term ids will be provided here for each mapping, separated by “|”. Example: APO:0000003|APO:0000002|APO:0000007. Otherwise, this field will contain “-”.
+31. Ontology Term Names - If any ontology terms are recorded for this interaction, the official ontology term name associated with the Ontology Term ID will be provided here for each mapping, separated by “|”. Example: decreased|abnormal|misexpression. Otherwise, this field will contain “-”.
+32. Ontology Term Categories - If any ontology terms are recorded for this interaction, the official ontology term category will be provided here for each mapping, separated by “|”. Example: phenotype|disease|cell line. Otherwise, this field will contain “-”.
+33. Ontology Term Qualifier IDs - If any additional qualifying terms are associated with the terms specified in column 30, those qualifier term IDs will be specified here, separated by “|”. It is possible for more than one qualifying term to be associated with a single term in column 30, in which case, each term will be separated by “^”. Example: APO:0000006^APO:0000009|-|APO:0000010. Otherwise, this field will contain “-”.
+34. Ontology Term Qualifier Names - If any additional qualifying terms are associated with the terms specified in column 31, those qualifier term names will be specified here, separated by “|”. It is possible for more than one qualifying term to be associated with a single term in column 31, in which case, each term will be separated by “^”. Example: mutant_type^overexpression|-|activation. Otherwise, this field will contain “-”.
+35. Ontology Term Types - In some cases, terms classified as phenotypes may include an additional type. If so, it will be listed here. If multiple terms have types, they will be separated by “|”. Example: wildtype|-|wildtype. Otherwise, this field will contain “-”.
+36. Organism Name Interactor A. This is the Official Organism Name for the Organism ID in 16.
+37. Organism Name Interactor B. This is the Official Organism Name for the Organism ID in 17.
+All columns are mandatory so columns with no values are filled with “-“
