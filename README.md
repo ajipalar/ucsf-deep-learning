@@ -1,3 +1,3 @@
 # bmi 219 Fundamentals of Deep Learning
-#+AUTHOR Aji Palar
+# AUTHOR Aji Palar
 
