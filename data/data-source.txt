@@ -1,4 +1,10 @@
 BIOGRID-ALL-4.4.197.mitlab.zip was downloaded on May 11 2021 around 9:40am
 from https://downloads.thebiogrid.org/File/BioGRID/Release-Archive/BIOGRID-4.4.197/BIOGRID-ALL-4.4.197.mitab.zip
 
+I realized that a tab deliminated file format would be easier for pandas to
+read than the mitab format.
+
+BIOGRIG-ALL-4.4.197.tab3.zip was downloaded on May 11 2021 around 11:04am from
+https://downloads.thebiogrid.org/File/BioGRID/Release-Archive/BIOGRID-4.4.197/BIOGRID-ALL-4.4.197.tab3.zip
+
 
