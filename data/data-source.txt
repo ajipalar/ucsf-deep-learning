@@ -1,0 +1,4 @@
+BIOGRID-ALL-4.4.197.mitlab.zip was downloaded on May 11 2021 around 9:40am
+from https://downloads.thebiogrid.org/File/BioGRID/Release-Archive/BIOGRID-4.4.197/BIOGRID-ALL-4.4.197.mitab.zip
+
+
